@@ -1,0 +1,115 @@
+<DOCTYPE html>
+
+<html>
+<head>
+        <meta charset="utf-8">
+        <html lang="es"></html>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi fiesta de Cumple</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <link href="/img/GentySans-Regular/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <section class="name-section">
+            <div>
+                <img class="foto-agasajado" src="./img/material-symbols-light--face-outline (1).png" alt="">
+            </div>
+            <img src= "./img/material-symbols--star-yellow1.svg" class="star1" id="star">
+            <img src= "./img/material-symbols--star-yellow1.svg" class="star2" id="star">
+            <img src= "./img/material-symbols--star-yellow1.svg" class="star3" id="star">
+            <img src= "./img/material-symbols--star-yellow1.svg" class="star4" id="star">
+
+            <div class="sonido">
+                <img class="sonido-play" id="sonido-imagen" src="./img/play.svg" alt="">
+                <span id="sonido-texto">Sonido</span>
+                <audio id="audio" src="./audio/Viajando En El Espacio _ Aventura al Universo _ HiDino Canciones Para Niños (128 kbps) (mp3cut.net).mp3"></audio>
+            </div>
+        
+            <h2>Cumple de</h2>          
+            <h1>Mateo!</h1>
+
+        </section>
+        
+    <section class="details-section">
+            <h2>Te invito a mi</h2>
+            <h2 class="edad">cumple de 5 años</h2>
+            <p class="fecha">El día 30-07-2024</p>
+            <p class="horario">de 18 a 21 hs</p>
+            <p class="salon">WAKA WAKA </p>
+            <p class="salon">EVENTOS</p>
+            <P class="asistencia">Por favor confirmar asistencia</P>
+    </section>
+
+    <section class="buttons-section">
+            <h2>Cuanto falta?</h2>
+            <div class="container">
+        
+                <div id="countdown">
+                    <div class="time-section">
+                        <span id="days"></span>
+                        <div class="label">Días</div>
+                    </div>
+                    <div class="time-section">
+                        <span id="hours"></span>
+                        <div class="label">Horas</div>
+                    </div>
+                    <div class="time-section">
+                        <span id="minutes"></span>
+                        <div class="label">Min</div>
+                    </div>
+                    <div class="time-section">
+                        <span id="seconds"></span>
+                        <div class="label">Seg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="botones"> 
+                <button class="btn-seccion-botones" id="whatsapp-boton">CONFIRMAR ASISTENCIA</button>
+                <button class="btn-seccion-botones" id="boton-calendario">AGENDALO</button>
+            </div>
+
+    </section>
+
+    <section class="salon-section">
+            <h2>Festejo en el salon</h2>
+            <p>WAKA WAKA</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="./img/2023-08-11-fotoSalonWakaWaka1.jpg" alt="Imagen 1">
+                    <img src="./img/2023-08-11-fotoSalonWakaWaka1.jpg" alt="Imagen 2">
+                    <img src="./img/2023-08-11-fotoSalonWakaWaka1.jpg" alt="Imagen 3">
+                </div>
+                <button  class="btn-prev" onclick="prevSlide()">❮</button>
+                <button  class="btn-next" onclick="nextSlide()">❯</button>
+            </div>
+        
+
+            <!-- <div class="fotos-salon">
+                <img src="./img/2023-08-11-fotoSalonWakaWaka1.jpg" alt="">
+                <img src="./img/2023-08-11-fotoSalonWakaWaka1.jpg" alt="">
+                <img src="./img/2023-08-11-fotoSalonWakaWaka1.jpg" alt="">
+                <img src="./img/2023-08-11-fotoSalonWakaWaka1.jpg" alt="">
+            </div> -->
+            <button id="mapsButton">COMO LLEGAR</button>
+            <p>Direccion xxxxxxxx</p>
+    </section>
+    <script src="./script.js" async defer></script>
+</body>
+    
+    
+            
+<footer>
+    <p>Hecho con ❤️ by CesusDev</p>
+    <p>Contacto mceciliaalbornoz@gmail.com</p>
+    <p>Whatsapp 3815545723</p>
+
+            
+</footer>
+            

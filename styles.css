@@ -1,0 +1,378 @@
+
+/* font-family: 'Inter', sans-serif; */
+@import url("./img/GentySans-Regular/GentySans-Regular.ttf");
+
+:root{
+    --bc: #252D50;
+    --text-yelow: #FFCC00;
+    --text-white: #FFFFFF;
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Genty';
+    
+}
+body{
+    max-width: 420px;
+}
+
+.name-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-image: url(./img/Invitación\ Cuadrada\ Cumpleaños\ Astronauta\ Morado.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    border-bottom:var(--text-yelow) solid;
+}
+.star-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.star1 {
+    margin-left: 40px;
+    margin-top: 60px;
+    width: 15px; /* Tamaño de la estrella */
+    height: 15px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+.star2 {
+    margin-left: 230px;
+    margin-top:80px;
+    width: 15px; /* Tamaño de la estrella */
+    height: 15px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+
+.star3 {
+    /* margin-left:px; */
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -360px;
+    width: 15px; /* Tamaño de la estrella */
+    height: 15px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+.star4 {
+    /* margin-left:px; */
+    position: absolute;
+    margin-left: 365px;
+    margin-top: -87px;
+    width: 15px; /* Tamaño de la estrella */
+    height: 15px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+
+/* Animación de titilado */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.sonido{
+    position: absolute;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 280px;
+    
+}
+
+.sonido-play{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.sonido span{
+    align-self: center;
+    color: var(--text-white);
+    font-size: 14px;
+}
+.foto-agasajado{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-left: 135px;
+    margin-top:-29px ;
+    display: none;
+}
+.name-section h2{
+    display: flex;
+    font-size: 24px;
+    color: var(--text-yelow);
+    margin-top:20px;
+    margin-left: 140px;
+   
+    
+}
+
+h1{
+    font-size: 36px;
+    color:var(--text-white);
+    margin-left: 140px;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), -20px -33px 1px rgba(206,89,55,0);
+color: #FFFFFF;
+}
+
+.details-section{
+    background-color: var(--bc);   
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    border-bottom: #FFCC00 solid;
+}
+
+.details-section h2{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-yelow);
+    width: 60%;
+    margin-top: 10px;
+
+    
+    
+
+}
+
+.edad{
+    margin-bottom: 20px;
+}
+
+.fecha{
+    font-size: 18px;
+    color: var(--text-white);
+    margin-bottom:20px ;
+    
+}
+.horario{
+    font-size: 18px;
+    color: var(--text-white);
+    margin-bottom: 20px;
+}
+
+.salon{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--text-white);
+    width: 150px;
+    
+}
+
+.asistencia{
+    font-size: 14px;
+    color: var(--text-white);
+    margin-top: 40px;
+}
+
+.buttons-section{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bc);
+    height: 320px;
+    border-bottom: var(--text-yelow) solid;
+}
+
+.buttons-section h2{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-yelow);
+    margin-bottom: 30px;
+    margin-top: 10px;
+    
+    
+}
+.container {
+    /* background-color: #fff;  */
+    padding: 20px;
+    border-radius: 10px;
+
+    /* display: inline-block; */
+    font-size: 18px;
+    color: var(--text-white);
+    margin-top: -16px;
+  
+}
+
+
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.time-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.label {
+    margin-top: 5px;
+    
+    font-size: 14px;
+}
+
+.cuenta-regresiva{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--text-white);
+    margin-bottom: 30px;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn-seccion-botones{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--text-yelow);
+    color: var(--text-white);
+    font-size: 18px;
+    font-family: 'Genty';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+button:hover{
+    background-color: #ffa500;
+}
+.salon-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bc);
+    height: 400px;
+
+}
+.salon-section h2{
+    font-size: 24px;
+    color: var(--text-yelow);
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+.salon-section p{
+    font-size: 18px;
+    color: var(--text-white);
+    margin-bottom: 20px;
+}
+.fotos-salon{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.fotos-salon img{
+    width: 80px;
+    height: 80px;
+}
+.carousel {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+}
+.carousel button:hover{
+    background-color: var(--text-yelow);
+}
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+
+
+#mapsButton{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 15px;
+    background-color: var(--text-yelow);
+    color: var(--text-white);
+    font-size: 18px;
+    font-family: 'Genty';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    
+}
+#mapsButton:hover{
+    background-color: orange;
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+
+}
