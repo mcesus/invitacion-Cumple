@@ -3,8 +3,8 @@
 // Función para redirigir a Google Calendar con un evento prellenado
 function redirectToGoogleCalendar() {
     // Datos del evento
-    const title = 'Mi Cumple'; // Título del evento
-    const details = 'Descripción del evento'; // Descripción del evento
+    const title = 'Cumple de Mateo'; // Título del evento
+    const details = 'Festejo de cumpleaños'; // Descripción del evento
     const location = 'Waka waka eventos'; // Ubicación del evento
     const startDate = '2024-08-15T09:00:00'; // Fecha y hora de inicio (en formato ISO)
     const endDate = '2024-08-15T10:00:00'; // Fecha y hora de fin (en formato ISO)

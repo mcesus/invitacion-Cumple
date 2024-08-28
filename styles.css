@@ -139,7 +139,7 @@ html{
     align-items: center;
     font-size: 36px;
     color: var(--text-yelow);
-    margin-top:40px;
+    margin-top:90px;
     /* margin-left: 130px; */
    
     
@@ -272,6 +272,22 @@ h1{
     margin-bottom: 30px;
 } */
 
+#hours::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+    
+}
+#minutes::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+}
+#seconds::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+}
 /* BOTONES CONFIRMACION WS Y CALENDARIO  */
 .botones{
     display: flex;
@@ -364,9 +380,9 @@ button:hover{
     transition: background-color 0.3s ease;
 
 }
-.carousel button:hover{
+/* .carousel button:hover{
     background-color: var(--text-yelow);
-}
+} */
 .btn-prev {
     left: 10px;
 }
@@ -381,7 +397,7 @@ button:hover{
     width: 280px;
     height: 90px;
     border-radius: 50px;
-    margin-top: 15px;
+    margin-top: 30px;
     background-color: var(--text-yelow);
     color: var(--text-white);
     font-size: 32px;
