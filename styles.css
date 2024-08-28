@@ -17,24 +17,28 @@
 }
 
 html{
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     font-family: 'Genty';
     
 }
-body{
+ body{
     max-width: 420px;
-}
+} 
+
+/* -------------------HERO------------------ */
 
 .name-section{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:center; 
+    align-items: center;
     background-image: url(./img/Invitación\ Cuadrada\ Cumpleaños\ Astronauta\ Morado.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
+    object-fit: scale-down;  
     width: 100%;
-    height: 400px;
+    height: 665px; 
     border-bottom:var(--text-yelow) solid;
 }
 .star-container {
@@ -44,7 +48,7 @@ body{
 }
 
 .star1 {
-    margin-left: 40px;
+    margin-left: -300px;
     margin-top: 60px;
     width: 15px; /* Tamaño de la estrella */
     height: 15px;
@@ -65,7 +69,7 @@ body{
 .star3 {
     /* margin-left:px; */
     position: absolute;
-    margin-left: 150px;
+    margin-left: 263px;
     margin-top: -360px;
     width: 15px; /* Tamaño de la estrella */
     height: 15px;
@@ -76,7 +80,7 @@ body{
 .star4 {
     /* margin-left:px; */
     position: absolute;
-    margin-left: 365px;
+    margin-left: 340px;
     margin-top: -87px;
     width: 15px; /* Tamaño de la estrella */
     height: 15px;
@@ -92,12 +96,15 @@ body{
     100% { opacity: 1; }
 }
 
+
+/* BOTON DE SONIDO  */
 .sonido{
     position: absolute;
     width: 100px;
     display: flex;
     flex-direction: column;
-    margin-top: 280px;
+    margin-top: 600px;
+    align-self: flex-start;
     
 }
 
@@ -111,106 +118,120 @@ body{
 .sonido span{
     align-self: center;
     color: var(--text-white);
-    font-size: 14px;
+    font-size: 20px;
 }
-.foto-agasajado{
+
+/* FOTO OPCIONAL DEL AGASAJADO */
+
+ .foto-agasajado{
     width: 150px;
     height: 150px;
     position: absolute;
     margin-left: 135px;
     margin-top:-29px ;
-    display: none;
-}
+    display: none; 
+ }
+
+
+
 .name-section h2{
     display: flex;
-    font-size: 24px;
+    align-items: center;
+    font-size: 36px;
     color: var(--text-yelow);
-    margin-top:20px;
-    margin-left: 140px;
+    margin-top:40px;
+    /* margin-left: 130px; */
    
     
 }
 
 h1{
-    font-size: 36px;
+    display: flex;
+    align-items: center;
+    font-size: 62px;
     color:var(--text-white);
-    margin-left: 140px;
+    /* margin-left: 145px; */
     text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), -20px -33px 1px rgba(206,89,55,0);
-color: #FFFFFF;
+    color: #FFFFFF;
 }
+
+/* INICIA SECCION DETALLES  */
 
 .details-section{
     background-color: var(--bc);   
     display: flex; 
     flex-direction: column;
     align-items: center;
-    height: 300px;
+    height: 500px;
     border-bottom: #FFCC00 solid;
 }
 
-.details-section h2{
+.details-section  .edad{
     display: flex;
-    justify-content: center;
-    font-size: 24px;
+    justify-content: center; 
+    align-content: center;
+    text-align: center;
+    font-size: 42px;
     color: var(--text-yelow);
     width: 60%;
     margin-top: 10px;
-
-    
-    
-
+ 
 }
 
-.edad{
+ .edad{
+    
     margin-bottom: 20px;
+} 
+
+
+.fecha {
+    font-size: 30px;
+    color: var(--text-white);
+    margin-bottom:20px ; 
 }
 
-.fecha{
-    font-size: 18px;
-    color: var(--text-white);
-    margin-bottom:20px ;
-    
-}
 .horario{
-    font-size: 18px;
+    font-size: 30px;
     color: var(--text-white);
     margin-bottom: 20px;
-}
+} 
 
 .salon{
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    font-size: 24px;
     color: var(--text-white);
     width: 150px;
     
 }
 
 .asistencia{
-    font-size: 14px;
+    font-size: 24px;
     color: var(--text-white);
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
-.buttons-section{
+/* INICIA SECCION BOTONES DE CONFIRMACION, AGENDA Y CUENTA REGRESIVA   */
+.confirmation-section{
     display: flex;
     flex-direction: column;
     background-color: var(--bc);
-    height: 320px;
+    height: 500px;
     border-bottom: var(--text-yelow) solid;
 }
 
-.buttons-section h2{
+.confirmation-section h2{
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 42px;
     color: var(--text-yelow);
     margin-bottom: 30px;
-    margin-top: 10px;
-    
-    
+    margin-top: 10px;   
 }
-.container {
+
+/* CUENTA REGRESIVA */
+
+.cuenta-regresiva {
     /* background-color: #fff;  */
     padding: 20px;
     border-radius: 10px;
@@ -222,18 +243,17 @@ color: #FFFFFF;
   
 }
 
-
-
 #countdown {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 .time-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 42px;
 }
 
 
@@ -244,27 +264,30 @@ color: #FFFFFF;
     font-size: 14px;
 }
 
-.cuenta-regresiva{
+/* .days{
     display: flex;
     justify-content: center;
     font-size: 36px;
     color: var(--text-white);
     margin-bottom: 30px;
-}
+} */
+
+/* BOTONES CONFIRMACION WS Y CALENDARIO  */
 .botones{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 15px;
 }
 .btn-seccion-botones{
-    width: 180px;
-    height: 50px;
-    border-radius: 25px;
+    width: 280px;
+    height: 90px;
+    border-radius: 50px;
     background-color: var(--text-yelow);
     color: var(--text-white);
-    font-size: 18px;
+    font-size: 32px;
     font-family: 'Genty';
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -272,28 +295,31 @@ color: #FFFFFF;
 button:hover{
     background-color: #ffa500;
 }
+
+
+/* INICIA SECCION DATOS DEL SALON */
 .salon-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--bc);
-    height: 400px;
+    height: 600px;
 
 }
 .salon-section h2{
-    font-size: 24px;
+    font-size: 42px;
     color: var(--text-yelow);
     margin-bottom: 20px;
     margin-top: 10px;
 
 }
 .salon-section p{
-    font-size: 18px;
+    font-size: 24px;
     color: var(--text-white);
     margin-bottom: 20px;
 }
 .fotos-salon{
-    width: 180px;
+    width: 250px;
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -301,13 +327,15 @@ button:hover{
     margin-bottom: 20px;
 }
 .fotos-salon img{
-    width: 80px;
-    height: 80px;
+    width: 250px;
+    height: 200px;
 }
+
+/* CAROUSEL  */
 .carousel {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 250px;
     
     overflow: hidden; 
     border-radius: 10px;
@@ -319,7 +347,7 @@ button:hover{
 }
 
 .carousel-images img {
-    width: 180px;
+    width: 280px;
     border-radius: 10px;
 }
 
@@ -347,16 +375,16 @@ button:hover{
     right: 10px;
 }
 
-
+/* BOTON COMO LLEGAR  */
 
 #mapsButton{
-    width: 180px;
-    height: 50px;
-    border-radius: 25px;
+    width: 280px;
+    height: 90px;
+    border-radius: 50px;
     margin-top: 15px;
     background-color: var(--text-yelow);
     color: var(--text-white);
-    font-size: 18px;
+    font-size: 32px;
     font-family: 'Genty';
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -367,6 +395,12 @@ button:hover{
     background-color: orange;
 
 }
+.salon-direccion{
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
 footer{
     display: flex;
     flex-direction: column;
