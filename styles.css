@@ -327,6 +327,7 @@ button:hover{
     color: var(--text-yelow);
     margin-bottom: 20px;
     margin-top: 10px;
+    text-align: center;
 
 }
 .salon-section p{
